@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/Man.ts"],
+  "sourcesContent": ["import Patient from \"./Patient\";\n\nexport default class Man extends Patient {\n\n  constructor(currentWeight: number, height: number, age: number) {\n    super(currentWeight, height, age, \"Man\");\n  }\n\n  getBasalEnergyExpenditure(): number {\n    return 66.47 + (13.75 * this.currentWeight) + (5.003 * this.height) - (6.755 * this.age);\n  }\n}"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,qBAAoB;AAEpB,MAAO,YAA0B,eAAAA,QAAQ;AAAA,EAEvC,YAAY,eAAuB,QAAgB,KAAa;AAC9D,UAAM,eAAe,QAAQ,KAAK,KAAK;AAAA,EACzC;AAAA,EAEA,4BAAoC;AAClC,WAAO,QAAS,QAAQ,KAAK,gBAAkB,QAAQ,KAAK,SAAW,QAAQ,KAAK;AAAA,EACtF;AACF;",
+  "names": ["Patient"]
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/BEE.ts"],
+  "sourcesContent": ["import Patient from \"./Patient\";\n\nexport default class BEE {\n  patients: Patient[];\n\n  constructor() {\n    this.patients = []\n  }\n\n  addPatient(patient: Patient) {\n    this.patients.push(patient);\n  }\n\n  getBasalEnergyExpenditure() {\n    let basalEnergyExpediture = 0;\n    for (const patient of this.patients) {\n      basalEnergyExpediture = patient.getBasalEnergyExpenditure();\n    }\n    return basalEnergyExpediture;\n  }\n\n}"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAEA,MAAO,IAAkB;AAAA,EAGvB,cAAc;AACZ,SAAK,WAAW,CAAC;AAAA,EACnB;AAAA,EAEA,WAAW,SAAkB;AAC3B,SAAK,SAAS,KAAK,OAAO;AAAA,EAC5B;AAAA,EAEA,4BAA4B;AAC1B,QAAI,wBAAwB;AAC5B,eAAW,WAAW,KAAK,UAAU;AACnC,8BAAwB,QAAQ,0BAA0B;AAAA,IAC5D;AACA,WAAO;AAAA,EACT;AAEF;",
+  "names": []
+}

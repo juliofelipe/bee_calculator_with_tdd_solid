@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/Woman.ts"],
+  "sourcesContent": ["import Patient from \"./Patient\";\n\nexport default class Woman extends Patient {\n\n  constructor(currentWeight: number, height: number, age: number) {\n    super(currentWeight, height, age, \"Woman\");\n  }\n\n  getBasalEnergyExpenditure(): number {\n    return 655.1 + (9.563 * this.currentWeight) + (1.850 * this.height) - (4.676 * this.age);\n  }\n}"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,qBAAoB;AAEpB,MAAO,cAA4B,eAAAA,QAAQ;AAAA,EAEzC,YAAY,eAAuB,QAAgB,KAAa;AAC9D,UAAM,eAAe,QAAQ,KAAK,OAAO;AAAA,EAC3C;AAAA,EAEA,4BAAoC;AAClC,WAAO,QAAS,QAAQ,KAAK,gBAAkB,OAAQ,KAAK,SAAW,QAAQ,KAAK;AAAA,EACtF;AACF;",
+  "names": ["Patient"]
+}

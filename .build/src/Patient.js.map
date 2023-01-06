@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/Patient.ts"],
+  "sourcesContent": ["export default abstract class Patient {\n  constructor( readonly currentWeight: number, readonly height: number, readonly age: number, readonly gender: string) {\n  }\n  \n  abstract getBasalEnergyExpenditure (): number;\n}"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,MAAO,QAA+B;AAAA,EACpC,YAAsB,eAAgC,QAAyB,KAAsB,QAAgB;AAA/F;AAAgC;AAAyB;AAAsB;AAAA,EACrG;AAGF;",
+  "names": []
+}
